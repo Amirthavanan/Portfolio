@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @theme {
   --color-darkblue:#083c72;
-  --color-floater:#02488a66;
 }
 @keyframes slide{
     from{
@@ -11,8 +10,5 @@
         transform: translateX(-100%);
     }
 }
-.logos-slide
-{
-    display: inline-block;
-    animation: 5s slide infinite linear;
-}
+
+

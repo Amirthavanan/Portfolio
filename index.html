@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./IMAGES/title_icon.png">
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="input.css">
-    
+    <link rel="icon" type="image/x-icon" href="./IMAGES/title_icon.png" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -16,23 +16,34 @@
       id="particle-canvas"
       class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
     ></canvas>
-    
-</head>
-<body class="bg-[#03152a] text-white font-serif relative overflow-x-hidden">
+  </head>
+  <body class="bg-[#03152a] text-white font-serif relative overflow-x-hidden">
     <script src="script.js"></script>
     <header class="header flex justify-center">
-      <img
-        src="./IMAGES/amir logo.png"
-        class=""
-        width="100vh"
-        height="100vh"
-      />
+      <img src="./IMAGES/amir logo.png" class="" width="100vh" height="100vh" />
     </header>
     <main>
-      <div class="grid">
-        <div class="profile text-center my-8">
+      <div class="md:grid md:grid-cols-12 md:m-10">        
+        <div class="profile-container md:col-span-6 flex justify-center my-10">
+          <div
+            class="round "
+          >
+            <div class="profile-image">
+              <img
+                src="./IMAGES/20231214_115919.jpg"
+                class="rounded-full w-xs border"
+                alt="TECH ICONSProfile"
+                width="100%"
+                height="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="profile md:col-span-6 md:content-center text-center my-8">
           <h2 class="text-3xl my-2 font-serif">Hello Iam</h2>
-          <h1 class="text-7xl my-2 font-serif text-[#30a3ff] w-100%">Amirthavanan</h1>
+          <h1 class="text-7xl my-2 font-serif text-[#30a3ff] w-100%">
+            Amirthavanan
+          </h1>
           <h2 class="text-3xl my-2 font-serif">
             Full Stack Developer <i class="bi bi-laptop"></i>
           </h2>
@@ -42,28 +53,21 @@
             Bootstrap) Skilled in data analysis, dashboard creation using Power
             BI and Tableau, and building user-friendly web interfaces.
           </p> -->
-          <button class="my-5 mx-3 inline-blockpx-2 font-serif border rounded-sm border-[#30a3ff] p-3 text-[#30a3ff]">Download CV</button>
-          <button class="my-5 mx-3 inline-blockpx-2 font-serif border rounded-sm border-[#30a3ff]  p-3 bg-[#30a3ff] text-[#083c72]">Let's Talk</button>
-        </div>
-        <div class="profile-container flex justify-center my-10">
-          <div
-            class="round after:content-[''] after:absolute after:-z-1 after:rounded-full after:background:[conic-gradient( from 0deg, #02488a, #78c2ff, #02488a, #30a3ff, #0054a7, #0587f2, #006acf )]"
+          <button
+            class="my-5 mx-3 inline-blockpx-2 font-serif border rounded-sm border-[#30a3ff] p-3 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]"
           >
-            <div class="profile-image">
-              <img
-                src="./IMAGES/20231214_115919.jpg"
-                class="rounded-full w-xs"
-                alt="Profile"
-                width="100%"
-                height="100%"
-              />
-            </div>
-          </div>
+            Download CV
+          </button>
+          <button
+            class="my-5 mx-3 inline-blockpx-2 font-serif border rounded-sm border-[#30a3ff] p-3 bg-[#30a3ff] text-[#083c72] font-bold hover:cursor-pointer hover:bg-transparent hover:text-[#30a3ff]"
+          >
+            Let's Talk
+          </button>
         </div>
-        <h1 class="head text-center my-2 py-2 text-2xl text-amber-100">
+        <h1 class="head md:col-span-full text-center my-2 py-2 text-2xl text-amber-100">
           Want to know about me !
-        </h1>
-        <div class="about m-10">
+        </h1>  
+        <div class="about md:col-span-6 m-10 text-center md:text-start">
           <p>
             I am an aspiring software engineer with a strong academic foundation
             in computer applications and business analytics. I hold a Bachelor’s
@@ -84,31 +88,31 @@
             Server and Oracle SQL. I am eager to explore opportunities where I
             can apply my skills and continue to grow in the tech industry.
           </p>
-        </div>
-        <div class="profile-container1 flex justify-center my-10">
+        </div>      
+        <div class="profile-container1 md:col-span-6 md:content-center flex justify-center my-10">
           <div class="round">
             <div class="profile-image">
               <img
                 src="./IMAGES/20231214_115916.jpg"
-                class="rounded-full w-xs"
-                alt="Profile"
+                class="rounded-full w-xs border"
+                alt="TECH ICONSProfile"
                 width="100%"
                 height="100%"
               />
             </div>
           </div>
-        </div>
-        <h1 class="edu text-amber-100 text-center text-2xl">
+        </div>        
+        <h1 class="edu md:col-span-full md:m-4 text-amber-100 text-center text-2xl">
           <span><i class="bi bi-mortarboard-fill"></i></span> Education
           <span><i class="bi bi-mortarboard-fill"></i></span>
         </h1>
-        <div class="education" id="education">
+        <div class="education md:col-span-full" id="education">
           <div
-            class="card w-[88%] border-1 mx-10 my-5 mx-3 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
+            class="card md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
             id="x"
           >
             <div class="card-header text-center py-2">
-              <h3 style="color: white">
+              <h3 class="text-[#30a3ff]">
                 G.B. Public School<br />-- Chennai --
               </h3>
             </div>
@@ -124,10 +128,10 @@
             </div>
           </div>
           <div
-            class="card w-[88%] border-1 mx-10 my-5 mx-3 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
+            class="card md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
           >
             <div class="card-header text-center py-2">
-              <h3 style="color: white">
+              <h3 class="text-[#30a3ff]">
                 G.B. Public School<br />-- Chennai --
               </h3>
             </div>
@@ -143,10 +147,10 @@
             </div>
           </div>
           <div
-            class="card w-[88%] border-1 mx-10 my-5 mx-3 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
+            class="card md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
           >
             <div class="card-header text-center py-2">
-              <h3 style="color: white">
+              <h3 class="text-[#30a3ff]">
                 B.S. Abdur Rahman Crescent Institute of Science & Technology<br />--
                 Chennai --
               </h3>
@@ -166,10 +170,10 @@
             </div>
           </div>
           <div
-            class="card w-[88%] border-1 mx-10 my-5 mx-3 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
+            class="card md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
           >
             <div class="card-header text-center py-2">
-              <h3 style="color: white">
+              <h3 class="text-[#30a3ff]">
                 B.S. Abdur Rahman Crescent Institute of Science & Technology<br />--
                 Chennai --
               </h3>
@@ -186,213 +190,109 @@
             </div>
           </div>
         </div>
-        <h1 class="skill-head text-amber-100 text-center text-2xl">
+        <h1 class="skill-head md:col-span-full text-amber-100 text-center text-2xl my-5">
           Techi Use
         </h1>
         <div
-          class="logos bg-[#02488a66] backdrop-blur-xs mx-10 p-10 overflow-hidden relative whitespace-nowrap"
-        >
-          <div class="logos-slide inline-block mx-5">
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Bootstrap.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Bootstrap</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/CSS3.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">CSS</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Django.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Django</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/GitHub.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">GitHub</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/HTML5.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">HTML</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/JavaScript.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">JavaScript</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Python.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Python</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/React.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">React JS</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/SQL Developer.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">SQL</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Tailwind CSS.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Tailwind</div>
-            </div>
-          </div>
-          <div class="logos-slide inline-block mx-5">
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Bootstrap.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Bootstrap</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/CSS3.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">CSS</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Django.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Django</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/GitHub.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">GitHub</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/HTML5.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">HTML</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/JavaScript.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">JavaScript</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Python.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Python</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/React.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">React JS</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/SQL Developer.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">SQL</div>
-            </div>
-            <div class="item mx-5 inline-block">
-              <img
-                class="icon relative h-20"
-                src="./IMAGES/Tailwind CSS.png"
-                alt="no image found"
-              />
-              <div class="overlay text-center">Tailwind</div>
-            </div>
+          class="logos md:col-span-full mx-10 p-10">
+          <div class="logos-slide flex md:flex md:flex-wrap flex-wrap md:mx-10">
+            <img src="./IMAGES/HTML5.png" class="h-25 w-25 m-5" alt="TECH ICONS">
+            <img src="./IMAGES/JavaScript.png" class="h-25 w-25 m-5" alt="TECH ICONS">
+            <img src="./IMAGES/Python.png" class="h-25 w-25 m-5" alt="TECH ICONS">
+            <img src="./IMAGES/SQL Developer.png" class="h-25 w-25 m-5" alt="TECH ICONS">
+            <img src="./IMAGES/React.png" class="h-25 w-25 m-5" alt="TECH ICONS">            
+            <img src="./IMAGES/Tailwind CSS.png" class="h-25 w-25 m-5" alt="TECH ICONS">
+            <img src="./IMAGES/Bootstrap.png" class="h-25 w-25 m-5 " alt="TECH ICONS">
+            <img src="./IMAGES/CSS3.png" class="h-25 w-25 m-5" alt="TECH ICONS">
+            <img src="./IMAGES/Django.png" class="h-25 w-25 m-5 border rounded-sm bg-white" alt="TECH ICONS">
+            <img src="./IMAGES/GitHub.png" class="h-25 w-25 m-5 border rounded-sm bg-white" alt="TECH ICONS">            
           </div>
         </div>
-        <h1 class="contact text-amber-100 text-center text-2xl">Contact Me !</h1>
-        <div class="message">
-          <div class="card text-center border-1 mx-10 my-5 font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none">
+        
+        </div>
+        <h1 class="contact md:col-span-full text-amber-100 text-center text-2xl my-5">
+          Contact Me !
+        </h1>
+        <div class="message md:col-span-full md:flex md:justify-evenly">
+          <div
+            class="card md:w-[30%] text-center border-1 mx-10 my-5 font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
+          >
             <i class="bi bi-envelope" style="font-size: 1.5em"></i>
             <h4>Mail</h4>
             <h4>amirthavanan123@gmail.com</h4>
-            <a href="" class="text-[#0587f2] hover:text-cyan-300">send a message</a>
+            <a href="mailto:amirthavanan123@gmail.com" class="text-[#0587f2] hover:text-cyan-300"
+              >send a message</a
+            >
           </div>
-          <div class="card card text-center border-1 mx-10 my-5 font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none">
+          <div
+            class="card md:w-[30%] card text-center border-1 mx-10 my-5 font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
+          >
             <i class="bi bi-instagram" style="font-size: 1.5em"></i>
             <h4>Instagram</h4>
             <h4>Amirthavanan N</h4>
-            <a href="" class="text-[#0587f2] hover:text-cyan-300">send a message</a>
+            <a href="https://www.instagram.com/mr_12_aj/" class="text-[#0587f2] hover:text-cyan-300"
+              >send a message</a
+            >
           </div>
-          <div class="card card text-center border-1 mx-10 my-5  font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none">
+          <div
+            class="card md:w-[30%] card text-center border-1 mx-10 my-5 font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-none"
+          >
             <i class="bi bi-whatsapp" style="font-size: 1.5em"></i>
             <h4>Whatsapp</h4>
             <h4>+91 8610438667</h4>
-            <a href="" class="text-[#0587f2] hover:text-cyan-300">send a message</a>
+            <a href="https://wa.me/qr/HTIFRV6OJPOQH1" class="text-[#0587f2] hover:text-cyan-300"
+              >send a message</a
+            >
           </div>
         </div>
         <div class="form"></div>
       </div>
-    </main>
-    <footer>
-
+    </main>    
+    <div class="options md:m-auto flex justify-center bottom-5 sticky">
+      <div
+        class="floater md:p-2 md:w-[30%] bg-[#02488a66] backdrop-blur-xs py-2 rounded-full w-70 flex justify-evenly m-[auto]"
+      >
+        <button
+          class="btn md:text-2xl md:p-2  bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+        >
+          <i class="bi bi-house"></i>
+        </button>
+        <button
+          class="btn md:text-2xl md:p-2 bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+        >
+          <i class="bi bi-person"></i>
+        </button>
+        <button
+          class="btn md:text-2xl md:p-2 bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+        >
+          <i class="bi bi-mortarboard-fill"></i>
+        </button>
+        <button
+          class="btn md:text-2xl md:p-2 bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+        >
+          <i class="bi bi-rocket-fill"></i>
+        </button>
+        <button
+          class="btn md:text-2xl md:p-2 bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+        >
+          <i class="bi bi-patch-check"></i>
+        </button>
+        <button
+          class="btn md:text-2xl md:p-2 bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+        >
+          <i class="bi bi-chat-left-text-fill"></i>
+        </button>
+      </div>
+    </div>
+    <footer class="bg-[#30a3ff] flex-row">
+      <div class="social-media text-center m-10 flex justify-center">
+        <a href="" class="p-2 rounded-md border border-black  mx-2 my-5 hover:bg-black"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/amirthavanan/" class="p-2 rounded-md border border-black  mx-2 my-5 hover:bg-black"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Amirthavanan" class="p-2 rounded-md border border-black  mx-2 my-5 hover:bg-black"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/mr_12_aj/" class="p-2 rounded-md border border-black  mx-2 my-5 hover:bg-black"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/qr/HTIFRV6OJPOQH1" class="p-2 rounded-md border border-black  mx-2 my-5 hover:bg-black"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <p class="text-sm text-lighter text-center"><i class="bi bi-c-circle"></i> Amirthavanan 2025<p>
     </footer>
-    <div class="flex justify-center bottom-5 sticky">
-      <div class="floater bg-[#02488a66] backdrop-blur-xs py-2 rounded-full w-50 flex justify-evenly m-[auto] ">
-        <button class="btn bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"><i class="bi bi-house"></i></button>
-        <button class="btn bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"><i class="bi bi-person"></i></button>
-        <button class="btn bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"><i class="bi bi-mortarboard-fill"></i></button>
-        <button class="btn bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"><i class="bi bi-rocket-fill"></i></button>
-        <button class="btn bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"><i class="bi bi-patch-check"></i></button>
-        <button class="btn bg-none rounded-full px-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"><i class="bi bi-chat-left-text-fill"></i></button>
-      </div> 
-    </div>   
-</body>
+  </body>
 </html>
