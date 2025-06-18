@@ -85,13 +85,28 @@ history.scrollRestoration = "manual"; // Prevents browser from restoring scroll 
     });
   </script> */}
 
-  const links = document.querySelectorAll('.btn');
+  // const links = document.querySelectorAll('.btn');
 
-    links.forEach(link => {
-      link.addEventListener('click', function () {
-        // Remove 'active' class from all links
-        links.forEach(l => l.classList.remove('active'));
-        // Add 'active' class to the clicked link
-        this.classList.add('active');
-      });
+  //   links.forEach(link => {
+  //     link.addEventListener('click', function () {
+  //       // Remove 'active' class from all links
+  //       links.forEach(l => l.classList.remove('active'));
+  //       // Add 'active' class to the clicked link
+  //       this.classList.add('active');
+  //     });
+  //   });
+
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fadeInUp');
+        entry.target.classList.remove('opacity-0');
+        observer.unobserve(entry.target); // animate only once
+      }
     });
+  });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
