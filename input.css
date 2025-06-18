@@ -10,5 +10,17 @@
         transform: translateX(-100%);
     }
 }
+html {
+      scroll-behavior: smooth;
+    }
+.logos-slide img
+{
+  transition: 0.5s;
+}
+.logos-slide img:hover
+{
+  cursor: pointer;
+  transform: scale(1.5);
+}
 
 

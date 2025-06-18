@@ -57,3 +57,41 @@ function animate() {
 init();
 animate();
 
+history.scrollRestoration = "manual"; // Prevents browser from restoring scroll position
+  window.onload = function() {
+    window.scrollTo(0, 0); // Always scroll to top
+  };
+
+
+{/* <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script> */}
+
+  const links = document.querySelectorAll('.btn');
+
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        // Remove 'active' class from all links
+        links.forEach(l => l.classList.remove('active'));
+        // Add 'active' class to the clicked link
+        this.classList.add('active');
+      });
+    });
