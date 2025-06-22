@@ -63,50 +63,36 @@ history.scrollRestoration = "manual"; // Prevents browser from restoring scroll 
   };
 
 
-{/* <script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
+ document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.nav-link');
 
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 80;
-        if (window.scrollY >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-          link.classList.add("active");
-        }
-      });
+  // CLICK: make nav link active on click
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      navLinks.forEach(nav => nav.classList.remove('active'));
+      this.classList.add('active');
     });
-  </script> */}
+  });
 
-  // const links = document.querySelectorAll('.btn');
+  // SCROLL: observe section and highlight nav based on scroll
+  const sections = document.querySelectorAll('.section');
 
-  //   links.forEach(link => {
-  //     link.addEventListener('click', function () {
-  //       // Remove 'active' class from all links
-  //       links.forEach(l => l.classList.remove('active'));
-  //       // Add 'active' class to the clicked link
-  //       this.classList.add('active');
-  //     });
-  //   });
+  window.addEventListener('scroll', () => {
+    let scrollY = window.pageYOffset;
 
+    sections.forEach(section => {
+      let sectionTop = section.offsetTop - 100; // adjust for header
+      let sectionHeight = section.offsetHeight;
+      let sectionId = section.getAttribute('id');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-fadeInUp');
-        entry.target.classList.remove('opacity-0');
-        observer.unobserve(entry.target); // animate only once
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
       }
     });
   });
-
-  document.querySelectorAll('.animate-on-scroll').forEach(el => {
-    observer.observe(el);
-  });
+});

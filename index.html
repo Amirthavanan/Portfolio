@@ -19,26 +19,24 @@
       class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
     ></canvas> -->
   </head>
-  <body class=" text-white relative overflow-x-hidden">
-    <script src="script.js"></script>
-    <header id="c1" class="header flex justify-center">
+  <body class=" text-white relative overflow-x-hidden">    
+    <header id="c1" class="header section flex justify-center">
       <img src="./IMAGES/amir logo.png" class="" width="100vh" height="100vh" />
     </header>
     <main>
       <div class="md:grid md:grid-cols-12 md:m-10">        
         <div class="profile-container md:col-span-6 flex flex-wrap content-center justify-center my-10">
-          <div class="bg1 relative flex h-90 w-90 flex-wrap content-end justify-start bg-blue-600">
-            <div
-              class=" bg2 round  flex flex-wrap h-85 w-85 content-end justify-start bg-blue-500"
-            >
-              <div class="bg3 profile-image flex flex-wrap h-80 w-80 content-end justify-start bg-blue-400">
-                <img
+          <div class="bg1 relative flex h-90 w-90 flex-wrap content-end justify-center bg-blue-600">
+            <img
                   src="./IMAGES/1profile.png"
-                  class="img-1 absolute -top-10 -start-4 w-[100%] h-100"
-                  alt="TECH ICONS Profile"
-                  width="100%"
-                  height="=100%"
+                  class="img-1 absolute max-w-full h-auto"
+                  alt="TECH ICONS Profile"                
                 />
+            <div
+              class=" bg2 round  flex flex-wrap h-85 w-85 content-end justify-center bg-blue-500"
+            >
+              <div class="bg3 profile-image flex flex-wrap h-80 w-80 content-end justify-center bg-blue-400">
+                
               </div>
             </div>
           </div>
@@ -61,15 +59,15 @@
             Download CV
           </a>
           <a href="#c6"
-            class="my-5 mx-3 inline-block px-2 font-serif rounded-sm border-[#30a3ff] p-3 bg-[#30a3ff] text-[#083c72] font-bold hover:cursor-pointer hover:bg-transparent hover:text-[#30a3ff]"
+            class="my-5 mx-3 inline-block px-2 font-serif rounded-sm border border-[#30a3ff] bg-[#30a3ff] p-3 text-[#083c72] font-bold hover:cursor-pointer hover:bg-transparent hover:text-[#30a3ff] hover:border-[#30a3ff]"
           >
             Let's Talk
           </a>
         </div>
-        <h1 id="c2" class="head md:col-span-full text-center my-2 py-2 text-2xl text-amber-100">
+        <h1 id="c2" class="head section md:col-span-full text-center my-2 py-2 text-2xl text-amber-100">
           To know about me !
         </h1>  
-        <div class="about md:col-span-6 m-10 text-center md:text-start">
+        <div class="aboutg md:col-span-6 m-10 text-center md:text-start">
           <p>
             I am an aspiring software engineer with a strong academic foundation
             in computer applications and business analytics. I hold a Bachelor’s
@@ -91,22 +89,25 @@
             can apply my skills and continue to grow in the tech industry.
           </p>
         </div>      
-        <div class="profile-container1 md:col-span-6 flex flex-wrap justify-center content-center my-10">
-          <div class="bg1 relative flex h-90 w-90 flex-wrap content-end justify-start bg-blue-600">
-            <div class="bg2 round  flex flex-wrap h-85 w-85 content-end justify-start bg-blue-500">
-              <div class="bg3 profile-image flex flex-wrap h-80 w-80 content-end justify-start bg-blue-400">
-                <img
+        <div class="profile-container1 md:col-span-6 flex flex-wrap justify-center content-center my-10 relative">
+          <div class="profile-container md:col-span-6 flex flex-wrap content-center justify-center my-10">
+          <div class="bg1 relative flex h-90 w-90 flex-wrap content-end justify-center bg-blue-600">
+            <img
                   src="./IMAGES/2profile.png"
-                  class="img-2 absolute -start-5 -top-1  "
-                  alt="TECH ICONSProfile" 
-                  width="100%"
-                  height="100%"                
+                  class="img-1 absolute max-w-full h-auto"
+                  alt="TECH ICONS Profile"                
                 />
+            <div
+              class=" bg2 round  flex flex-wrap h-85 w-85 content-end justify-center bg-blue-500"
+            >
+              <div class="bg3 profile-image flex flex-wrap h-80 w-80 content-end justify-center bg-blue-400">
+                
               </div>
             </div>
           </div>
+        </div>                  
         </div>        
-        <h1 id="c3" class="edu md:col-span-full md:m-4 text-amber-100 text-center text-2xl">
+        <h1 id="c3" class="edu section md:col-span-full md:m-4 text-amber-100 text-center text-2xl">
           <span> Education
           <span>
         </h1>
@@ -195,7 +196,7 @@
           
           
         </div>
-        <h1 id="c5" class="skill-head md:col-span-full text-amber-100 text-center text-2xl my-5">
+        <h1 id="c5" class="skill-head section md:col-span-full text-amber-100 text-center text-2xl my-5">
           Tech knows !
         </h1>
         <div
@@ -215,7 +216,7 @@
         </div>
         
         </div>
-        <h1 id="c6" class="contact md:col-span-full text-amber-100 text-center text-2xl my-5">
+        <h1 id="c6" class="contact section md:col-span-full text-amber-100 text-center text-2xl my-5">
           Contact Me !
         </h1>
         <div class="message md:col-span-full md:flex md:justify-evenly">
@@ -254,36 +255,36 @@
       </div>
     </main>    
     <div class="options md:m-auto flex justify-center bottom-5 sticky">
-      <div
+      <div id="floater"
         class="floater md:p-2 md:w-[30%] bg-[#02488a66] backdrop-blur-xs py-2 rounded-full h-15 w-80 flex flex-wrap content-center justify-evenly m-[auto]"
       >
         <a href="#c1"
-          class="btn text-xl md:text-2xl md:p-2 active:text-black active:bg-[#30a3ff] bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+          class="btn nav-link text-xl md:text-2xl md:p-2 bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
         >
           <i class="bi bi-house"></i>
         </a>
         <a href="#c2"
-          class="btn text-xl md:text-2xl md:p-2 active:text-black active:bg-[#30a3ff] bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+          class="btn nav-link text-xl md:text-2xl md:p-2 bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
         >
           <i class="bi bi-person"></i>
         </a>
         <a href="#c3"
-          class="btn text-xl md:text-2xl md:p-2 active:text-black active:bg-[#30a3ff] bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+          class="btn nav-link text-xl md:text-2xl md:p-2 bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
         >
           <i class="bi bi-mortarboard-fill"></i>
         </a>
         <a href="#"
-          class="btn text-xl md:text-2xl md:p-2 active:text-black active:bg-[#30a3ff] bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+          class="btn nav-link text-xl md:text-2xl md:p-2 bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
         >
           <i class="bi bi-rocket-fill"></i>
         </a>
         <a href="#c5"
-          class="btn text-xl md:text-2xl md:p-2 active:text-black active:bg-[#30a3ff] bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+          class="btn nav-link text-xl md:text-2xl md:p-2 bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
         >
           <i class="bi bi-patch-check"></i>
         </a>
         <a href="#c6"
-          class="btn text-xl md:text-2xl md:p-2 active:text-black active:bg-[#30a3ff] bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
+          class="btn nav-link text-xl md:text-2xl md:p-2 bg-transparent rounded-full px-2 py-1 hover:text-black hover:bg-[#30a3ff] hover:cursor-pointer"
         >
           <i class="bi bi-chat-left-text-fill"></i>
         </a>
@@ -299,5 +300,6 @@
       </div>
       <p class="text-sm text-lighter text-center"><i class="bi bi-c-circle"></i> Amirthavanan 2025<p>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
