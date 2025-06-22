@@ -58,4 +58,96 @@ body
   color: black;
   transition: 0.5s ease;
 }
-
+.autoshow{
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+@keyframes text-appear{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.imagereveal{
+  animation: imageReveal both;
+  animation-timeline: view(80% 30%);
+}
+@keyframes imageReveal{
+  from{
+    filter: saturate(0) contrast(4) brightness(.1) ;
+    opacity: 0;
+    scale: .60;
+    translate: 0 4rem;
+  }
+  to{
+    filter: none;
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+  }
+}
+.faded
+{
+  animation: fader 2s;
+}
+@keyframes fader {
+  from{
+    scale: 0.8;
+    opacity: 0;
+  }
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
+.typewriter
+{
+  width: 100%;
+  margin: auto;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(22),cursor .4s  infinite alternate;
+}
+@keyframes cursor {
+  50%{border-color: transparent;
+  }
+}
+@keyframes typing {
+  from{width: 0;}
+}
+.fade-r
+{
+  animation: fade-r 2s;
+  animation-timeline: view(60% 2%);
+}
+@keyframes fade-r {
+  from{
+    transform:translateX(-200px);
+    opacity: 0;
+  }
+  to{
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+.fade-l
+{
+  animation: fade-l 2s;
+  animation-timeline: view(60% 2%);
+}
+@keyframes fade-l {
+  from{
+    transform:translatex(200px);
+    opacity: 0;
+  }
+  to{
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
