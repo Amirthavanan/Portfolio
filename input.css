@@ -151,3 +151,8 @@ body
     opacity: 1;
   }
 }
+#floater .active:active
+{
+  color: black;
+  background-color: #30a3ff;
+}
