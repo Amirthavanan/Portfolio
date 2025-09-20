@@ -19,7 +19,7 @@
     />
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- <canvas
       id="particle-canvas"
       class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
@@ -81,14 +81,14 @@
           <a
             href="./AMIRTHAVANAN_FS.pdf"
             download
-            class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-3 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]"
+            class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-1 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]"
           >
             Developer CV
           </a>
           <a
             href="./AMIRTHAVANAN_DA.pdf"
             download
-            class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-3 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]"
+            class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-1 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]"
           >
             Analyst CV
           </a>
@@ -99,12 +99,14 @@
             Let's Talk
           </a>
         </div>
-        <h1
-          id="c2"
-          class="head section autoshow md:col-span-full text-center my-2 py-2 text-2xl text-amber-100"
-        >
-          To know about me !
-        </h1>
+      </div>
+      <h1
+        id="c2"
+        class="head section autoshow md:col-span-full text-center my-2 py-2 text-2xl text-amber-100"
+      >
+        To know about me !
+      </h1>
+      <div class="md:grid md:grid-cols-12 md:m-10 min-h-full">
         <div
           class="about imagereveal md:col-span-6 m-10 text-center md:text-start"
         >
@@ -117,16 +119,20 @@
             Tableau.<br /><br />
             I am passionate about solving real-world problems through technology
             and enjoy turning raw data into meaningful insights that support
-            business growth and innovation. I have completed certifications in
-            Python, SQL, and Power BI, and have written 400–500 SQL queries,
-            which has strengthened my confidence in handling databases and
-            performing CRUD operations efficiently.<br /><br />
-            During my academic journey, I worked on data-hovered projects such
-            as sales and supply chain analysis, which enhanced my ability to
-            derive actionable insights from complex datasets. I am comfortable
-            working with various database management systems including SQL
-            Server and Oracle SQL. I am eager to explore opportunities where I
-            can apply my skills and continue to grow in the tech industry.
+            business growth and innovation. <br /><br />
+            A data enthusiast with a passion for turning numbers into narratives. 
+            I specialize in using tools like Python, SQL, Power BI, Tableau, and Excel 
+            to uncover insights that drive smarter decisions. Whether it's cleaning messy 
+            datasets, building dashboards, or writing complex queries, I love diving 
+            deep into data to solve real-world problems.<br/><br/>
+            I come from a strong academic background in web application development 
+            and business analytics, and I’ve worked on projects ranging from sales 
+            performance to supply chain optimization. These experiences have sharpened 
+            my ability to spot trends, identify growth opportunities, and communicate findings clearly.<br/><br/>
+            I’m certified in Python, SQL, and Power BI, and I’m always eager to learn more. 
+            I thrive in collaborative environments, enjoy creative problem-solving, and believe 
+            that data is the key to unlocking innovation.
+  
           </p>
         </div>
         <div
@@ -163,16 +169,18 @@
             </div>
           </div>
         </div>
-        <h1
-          id="c3"
-          class="edu section autoshow md:col-span-full md:m-4 text-amber-100 text-center text-2xl"
-        >
-          <span> Education</span>
-        </h1>
-        <div class="education md:col-span-full" id="education">
+      </div>
+      <h1
+        id="c3"
+        class="edu section autoshow md:col-span-full md:m-4 text-amber-100 text-center text-2xl"
+      >
+        Education
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 p-6">        
           <div
-            class="card fade-r md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
-          >
+            class="card fade-l  border-1 my-5 mx-5 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+            id="x"
+           >
             <div class="card-header text-center py-2">
               <h3 class="text-[#30a3ff]">
                 B.S. Abdur Rahman Crescent Institute of Science & Technology<br />--
@@ -189,10 +197,11 @@
               <h3 style="padding: 0.5em; color: white">Percentage : 85%</h3>
               <h3 style="padding: 0.5em; color: white">CGPA : 8.5</h3>
             </div>
-          </div>
+          </div>        
           <div
-            class="card fade-l md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
-          >
+            class="card fade-l  border-1 my-5 mx-5 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+            id="x"
+           >
             <div class="card-header text-center py-2">
               <h3 class="text-[#30a3ff]">
                 B.S. Abdur Rahman Crescent Institute of Science & Technology<br />--
@@ -212,11 +221,10 @@
                 <i class="bi bi-award"></i>
               </h3>
             </div>
-          </div>
-
+          </div>     
           <div
-            class="card fade-r md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
-          >
+            class="card fade-r  border-1 my-5 mx-5 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+           >
             <div class="card-header text-center py-2">
               <h3 class="text-[#30a3ff]">
                 G.B. Public School<br />-- Chennai --
@@ -231,11 +239,11 @@
               </h3>
               <h3 style="padding: 0.5em; color: white">Percentage : 79%</h3>
             </div>
-          </div>
+          </div>        
           <div
-            class="card fade-l md:w-[44%] w-[88%] border-1 my-5 mx-8 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+            class="card fade-l  border-1 my-5 mx-5 inline-block font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
             id="x"
-          >
+           >
             <div class="card-header text-center py-2">
               <h3 class="text-[#30a3ff]">
                 G.B. Public School<br />-- Chennai --
@@ -250,87 +258,125 @@
               </h3>
               <h3 style="padding: 0.5em; color: white">Percentage : 80%</h3>
             </div>
-          </div>
+          </div>   
+      </div>      
+      <h1
+        id="c4"
+        class="pro section autoshow my-5 md:col-span-full text-amber-100 text-center text-2xl"
+      >
+        Projects
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 p-6">
+              <!-- Card 1 -->
+        <div class="card fade-r  border-1 my-5 mx-5 inline-block font-serif  border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+              >
+              <img src="./IMAGES/portfolio.png" class="w-full h-full md:h-40 object-cover" alt="project-image"/>
+          <h5 class="text-xl font-semibold mt-2 mb-2 text-center">Personal Portfolio</h5>
+          <a href="https://github.com/Amirthavanan/Portfolio" class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-1 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]">Project</a>
         </div>
-        <h1 id="c4"></h1>
-        <h1
-          id="c5"
-          class="skill-head section autoshow md:col-span-full text-amber-100 text-center text-2xl my-5"
-        >
-          Tech knows !
-        </h1>
-        <div class="logos md:col-span-full mx-5 p-10">
-          <div
-            class="logos-slide autoshow flex md:flex md:flex-wrap flex-wrap md:mx-10 md:justify-center md:content-center"
-          >
-            <img
-              src="./IMAGES/HTML5.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/JavaScript.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/Python.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/SQL Developer.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/React.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/Tailwind CSS.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/Bootstrap.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/CSS3.png"
-              class="h-25 w-25 m-5"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/Django.png"
-              class="h-25 w-25 m-5 rounded-sm bg-[#30a3ff]"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/GitHub.png"
-              class="h-25 w-25 m-5 rounded-sm bg-[#30a3ff]"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/powerbi.png"
-              class="h-25 w-25 m-5 rounded-sm"
-              alt="TECH ICONS"
-            />
-            <img
-              src="./IMAGES/tableau.png"
-              class="h-25 w-25 m-5 rounded-sm"
-              alt="TECH ICONS"
-            />
-          </div>
+
+        <!-- Card 2 -->
+        <div class="card fade-r  border-1 my-5 mx-5 inline-block font-serif  border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+              >
+              <img src="./IMAGES/tableau-analysis.jpg" class="w-full h-full md:h-40 object-cover" alt="project-image"/>
+          <h5 class="text-xl font-semibold mt-2 mb-2 text-center">Tableau Analysis</h5>
+          <a href="https://github.com/Amirthavanan/Data-Anlaysis-project" class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-1 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]">Project</a>
         </div>
-        <h1
-          id="c6"
-          class="contact section autoshow md:col-span-full text-amber-100 text-center text-2xl my-5"
+
+        <!-- Card 3 -->
+        <div class="card fade-r  border-1 my-5 mx-5 inline-block font-serif  border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+              >
+              <img src="./IMAGES/powerbi-analysis.png" class="w-full h-full md:h-40 object-cover" alt="project-image"/>
+          <h5 class="text-xl font-semibold mt-2 mb-2 text-center">Power Bi Analysis</h5>
+          <a href="https://github.com/Amirthavanan/FUTURE_DS_02" class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-1 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]">Project</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card fade-r  border-1 my-5 mx-5 inline-block font-serif  border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
+              >
+              <img src="./IMAGES/python-projects.jpeg" class="w-full h-full md:h-40 object-cover" alt="project-image "/>
+          <h5 class="text-xl font-semibold mt-2 mb-2 text-center">Python Mini Projects</h5>
+          <a href="https://github.com/Amirthavanan/Mini-projects" class="my-3 mx-3 inline-block px-2 font-serif border rounded-sm border-[#30a3ff] p-1 text-[#30a3ff] font-bold hover:cursor-pointer hover:bg-[#30a3ff] hover:text-[#083c72]"">Project</a>
+        </div>
+      </div>
+      
+
+
+      <h1
+        id="c5"
+        class="skill-head section autoshow md:col-span-full text-amber-100 text-center text-2xl my-5"
+      >
+        Tech knows !
+      </h1>
+      <div class="logos md:col-span-full mx-5 p-10">
+        <div
+          class="logos-slide autoshow flex md:flex md:flex-wrap flex-wrap md:mx-10 md:justify-center md:content-center"
         >
-          Contact Me !
-        </h1>
+          <img
+            src="./IMAGES/HTML5.png"
+            class="h-25 w-25 m-5"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/JavaScript.png"
+            class="h-25 w-25 m-5"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/Python.png"
+            class="h-25 w-25 m-5"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/SQL Developer.png"
+            class="h-25 w-25 m-5"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/React.png"
+            class="h-25 w-25 m-5"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/Tailwind CSS.png"
+            class="h-25 w-25 m-5"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/Bootstrap.png"
+            class="h-25 w-25 m-5"
+            alt="TECH ICONS"
+          />
+          <img src="./IMAGES/CSS3.png" class="h-25 w-25 m-5" alt="TECH ICONS" />
+          <img
+            src="./IMAGES/Django.png"
+            class="h-25 w-25 m-5 rounded-sm bg-[#30a3ff]"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/GitHub.png"
+            class="h-25 w-25 m-5 rounded-sm bg-[#30a3ff]"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/powerbi.png"
+            class="h-25 w-25 m-5 rounded-sm"
+            alt="TECH ICONS"
+          />
+          <img
+            src="./IMAGES/tableau.png"
+            class="h-25 w-25 m-5 rounded-sm"
+            alt="TECH ICONS"
+          />
+        </div>
+      </div>
+      <h1
+        id="c6"
+        class="contact section autoshow md:col-span-full text-amber-100 text-center text-2xl my-5"
+      >
+        Contact Me !
+      </h1>
+      <div class="md:grid md:grid-cols-12 md:m-10 min-h-full">
         <div class="message md:col-span-5 md:flex-row md:justify-evenly">
           <div
             class="card fade-r autoshow md:w-[80%] text-center border-1 mx-10 my-10 font-serif rounded-2xl border-[#02488a] bg-[#02488a66] backdrop-blur-xs hover:bg-transparent"
